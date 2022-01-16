@@ -1,0 +1,13 @@
+{
+  "appId": "eu.selfhost.practise_tool_electronic",
+  "appName": "practise_tool_electronic",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  },
+  "cordova": {}
+}

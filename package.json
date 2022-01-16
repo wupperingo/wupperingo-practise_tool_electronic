@@ -1,0 +1,62 @@
+{
+  "name": "practise_tool_electronic",
+  "private": true,
+  "version": "1.0.0",
+  "description": "practise_tool_electronic",
+  "repository": "",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "cross-env NODE_ENV=development vite",
+    "build": "cross-env NODE_ENV=production vite build && npx workbox generateSW workbox-config.js",
+    "build-cordova": "cross-env TARGET=cordova cross-env NODE_ENV=production vite build && node ./build/build-cordova.js && cd cordova && cordova build",
+    "build-cordova-ios": "cross-env TARGET=cordova cross-env NODE_ENV=production vite build && node ./build/build-cordova.js && cd cordova && cordova build ios",
+    "cordova-ios": "cross-env TARGET=cordova cross-env NODE_ENV=production vite build && node ./build/build-cordova.js && cd cordova && cordova run ios",
+    "build-cordova-android": "cross-env TARGET=cordova cross-env NODE_ENV=production vite build && node ./build/build-cordova.js && cd cordova && cordova build android",
+    "cordova-android": "cross-env TARGET=cordova cross-env NODE_ENV=production vite build && node ./build/build-cordova.js && cd cordova && cordova run android",
+    "build-cordova-electron": "cross-env TARGET=cordova cross-env NODE_ENV=production vite build && node ./build/build-cordova.js && cd cordova && cordova build electron",
+    "build-cordova-osx": "cross-env TARGET=cordova cross-env NODE_ENV=production vite build && node ./build/build-cordova.js && cd cordova && cordova build osx",
+    "cordova-electron": "cross-env TARGET=cordova cross-env NODE_ENV=production vite build && node ./build/build-cordova.js && cd cordova && cordova run electron",
+    "build-capacitor-ios": "cross-env NODE_ENV=production vite build && npx cap copy ios",
+    "build-capacitor-android": "cross-env NODE_ENV=production vite build && npx cap copy android",
+    "postinstall": "cpy ./node_modules/framework7-icons/fonts/*.* ./src/fonts/ && cpy ./node_modules/material-icons/iconfont/*.* ./src/fonts/"
+  },
+  "browserslist": [
+    "Android >= 7",
+    "IOS >= 11",
+    "Safari >= 11",
+    "Chrome >= 49",
+    "Firefox >= 31",
+    "Samsung >= 5"
+  ],
+  "dependencies": {
+    "@capacitor/android": "^3.3.4",
+    "@capacitor/app": "^1.0.7",
+    "@capacitor/browser": "^1.0.6",
+    "@capacitor/core": "^3.3.4",
+    "@capacitor/ios": "^3.3.4",
+    "@capacitor/keyboard": "^1.2.0",
+    "@capacitor/splash-screen": "^1.2.0",
+    "@capacitor/status-bar": "^1.0.6",
+    "dom7": "^3.0.0",
+    "framework7": "^6.3.14",
+    "framework7-icons": "^5.0.5",
+    "material-icons": "^1.10.6",
+    "skeleton-elements": "^3.5.0",
+    "swiper": "^6.8.4"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^3.3.4",
+    "concurrently": "^7.0.0",
+    "cordova-res": "^0.15.4",
+    "cpy-cli": "^3.1.1",
+    "cross-env": "^7.0.3",
+    "less": "^4.1.2",
+    "postcss-preset-env": "^6.7.0",
+    "rollup": "^2.64.0",
+    "rollup-plugin-framework7": "^1.2.1",
+    "vite": "^2.7.12",
+    "vite-plugin-html": "^2.1.2",
+    "workbox-cli": "^6.4.2"
+  }
+}

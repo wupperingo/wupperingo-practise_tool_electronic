@@ -1,0 +1,43 @@
+{
+  "cwd": "/home/ingo/Projekte/Apps/practise_tool_electronic",
+  "type": [
+    "web",
+    "pwa",
+    "cordova",
+    "capacitor"
+  ],
+  "name": "practise_tool_electronic",
+  "pkg": "eu.selfhost.practise_tool_electronic",
+  "framework": "core",
+  "template": "single-view",
+  "bundler": "vite",
+  "cssPreProcessor": "less",
+  "cordova": {
+    "folder": "cordova",
+    "platforms": [
+      "ios",
+      "android",
+      "electron",
+      "osx"
+    ],
+    "plugins": [
+      "cordova-plugin-statusbar",
+      "cordova-plugin-keyboard",
+      "cordova-plugin-splashscreen"
+    ]
+  },
+  "capacitor": {
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "theming": {
+    "customColor": false,
+    "color": "#007aff",
+    "darkTheme": false,
+    "iconFonts": true,
+    "fillBars": false
+  },
+  "customBuild": false
+}
