@@ -11,29 +11,33 @@
           </a>
         </div>
         <div class="title sliding">practise_tool_electronic</div>
+        <!--
         <div class="right">
           <a href="#" class="link icon-only panel-open" data-panel="right">
             <i class="icon f7-icons if-not-md">menu</i>
             <i class="icon material-icons if-md">menu</i>
           </a>
         </div>
+        -->
         <div class="title-large">
           <div class="title-large-text">practise_tool_electronic</div>
         </div>
       </div>
     </div>
-    <!-- Toolbar-->
+    <!-- Toolbar
     <div class="toolbar toolbar-bottom">
       <div class="toolbar-inner">
         <a href="#" class="link">Left Link</a>
         <a href="#" class="link">Right Link</a>
       </div>
     </div>
+    -->
     <!-- Scrollable page content-->
     <div class="page-content">
       <div class="block block-strong">
         <p>Here is your blank Framework7 app. Let's see what we have here.</p>
       </div>
+      <!--
       <div class="block-title">Navigation</div>
       <div class="list">
         <ul>
@@ -53,7 +57,8 @@
           </li>
         </ul>
       </div>
-
+      -->
+<!--
       <div class="block-title">Modals</div>
       <div class="block block-strong">
         <div class="row">
@@ -91,7 +96,9 @@
           </li>
         </ul>
       </div>
+      -->
     </div>
+    
   </div>
 </template>
 <script>

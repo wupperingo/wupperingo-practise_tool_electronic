@@ -18,7 +18,7 @@
         </div>
       </div>
     </div>
-    <!-- Right panel with reveal effect-->
+    <!-- Right panel with reveal effect
     <div class="panel panel-right panel-reveal theme-dark">
       <div class="view">
         <div class="page">
@@ -34,12 +34,12 @@
         </div>
       </div>
     </div>
-
+-->
     <!-- Your main view, should have "view-main" class -->
     <div class="view view-main view-init safe-areas" data-url="/"></div>
 
 
-    <!-- Popup -->
+    <!-- Popup 
     <div class="popup" id="my-popup">
       <div class="view">
         <div class="page">
@@ -60,8 +60,8 @@
         </div>
       </div>
     </div>
-
-    <!-- Login Screen -->
+-->
+    <!-- Login Screen 
     <div class="login-screen" id="my-login-screen">
       <div class="view">
         <div class="page">
@@ -102,7 +102,7 @@
         </div>
       </div>
     </div>
-
+-->
   </div>
 </template>
 <script>
